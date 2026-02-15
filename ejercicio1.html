@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 1</title>
+</head>
+<body>
+  <p id="mensaje"></p>
+  <button id="actualizarBtn">Actualizar texto</button>
+
+  <script>
+    const boton = document.getElementById("actualizarBtn");
+    const parrafo = document.getElementById("mensaje");
+
+    boton.addEventListener("click", function () {
+      parrafo.textContent = "¡Texto actualizado con Javascript!";
+    });
+  </script>
+</body>
+</html>
